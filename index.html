@@ -1,13 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
- 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+    <!--about-->
+    <nav class="bg-transparent fixed-top">
+        <h1>Delicious</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Chefs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Drop down</a><select name="" id=""></select></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="button-nav">book a table</button>
+    </nav>
+    <!--home / in sass named also about-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./public/assets/img/slide/slide-1.jpg" class="d-block w-100" alt="..." height="800px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 d-flex justify-content-center>Lorem, ipsum dolor.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, porro. Similique culpa, rerum
+                        ratione explicabo ducimus iure, autem itaque amet doloremque ut, accusamus ipsum perspiciatis
+                        aut. Mollitia placeat id ea..</p>
+                    <div><button class="button-carousel bg-transparent">Our Menu</button>
+                        <button class="button-carousel bg-transparent">Book a Table</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./public/assets/img/slide/slide-2.jpg" class="d-block w-100" alt="..." height="800px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem, ipsum dolor.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, porro. Similique culpa, rerum
+                        ratione explicabo ducimus iure, autem itaque amet doloremque ut, accusamus ipsum perspiciatis
+                        aut. Mollitia placeat id ea..</p>
+                    <div><button class="button-carousel bg-transparent">Our Menu</button>
+                        <button class="button-carousel bg-transparent">Book a Table</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./public/assets/img/slide/slide-3.jpg" class="d-block w-100" alt="..." height="800px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 d-flex justify-content-center>Lorem, ipsum dolor.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, porro. Similique culpa, rerum
+                        ratione explicabo ducimus iure, autem itaque amet doloremque ut, accusamus ipsum perspiciatis
+                        aut. Mollitia placeat id ea..</p>
+                    <div><button class="button-carousel bg-transparent">Our Menu</button>
+                        <button class="button-carousel bg-transparent">Book a Table</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--about-->
+
+    <div class="about">
+        <div class="left-side"><video width="320" height="240" controls poster="./public/assets/vedio-projet-final.htm"
+                autoplay>
+                <source src="./public/assets/vedio-projet-final.htm">
+
+            </video>
+        </div>
+        <div class="right-side">
+            <h1>Eun ipsam Lorem <span>ipsum evet<br>parirateur sit amet nehiel </span></h1>
+            <p class="p-h1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae atque<br> similique.
+                Lorem ipsum dolor
+                sit amet Lorem ipsum dolor sit amet, conset <br> adipisicing elit. Sint, officiis.</p>
+            <p class="p-h1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae atque <br>similique.
+                Lorem ipsum dolor
+                sit amet Lorem ipsum dolor, sit amet consect <br> adipisicing elit. Quibusdam .</p>
+            <div class="p-icon">
+                <div class="d-flex gap-2">
+                    <i class="bi bi-check-all "></i>
+
+                    <p class="p-right-side">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                        delectus?</p>
+                </div>
+            </div>
+            <div class="p-icon">
+                <div class="d-flex gap-2">
+                    <i class="bi bi-check-all "></i>
+
+                    <p class="p-right-side">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                        delectus?</p>
+                </div>
+            </div>
+            <div class="p-icon">
+                <div class="d-flex gap-2">
+                    <i class="bi bi-check-all "></i>
+
+                    <p class="p-right-side">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+                        delectus? <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, voluptate.</p>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi quae omnis sed fugit. Nam, soluta non
+                ullam dignissimos quo vitae aspernatur explicabo odio, tempora nihil et reiciendis qui in laudantium
+                iusto quidem atque adipisci. Quaerat?</p>
+        </div>
+    </div>
+    <!--menu-->
+    <div class="section">
+        <div class="section-title">
+            <h1>Why chose <span> our restaurent</span> </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,<br> ipsum ducimus deleniti minima
+                odit architecto eum iusto amet!</p>
+        </div>
+        <div class="section-cards">
+            <div class="card-1">
+                <h1><span>01</span></h1>
+
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem ipsum dolor, sit<br> amet consectetur <br>adipisicing elit.</p>
+            </div>
+            <div class="card-1">
+                <h1><span>02</span></h1>
+                <h4>Lorem, ipsum .</h4>
+                <p>Lorem ipsum dolor, sit <br>amet consectetur adipis <br>icing elit. Assumenda.</p>
+            </div>
+            <div class="card-1">
+                <h1><span>03</span></h1>
+                <h4>Lorem, ipsum.</h4>
+                <p>Lorem ipsum dolor sit<br> amet consectetur adipis<br>icing elit.</p>
+            </div>
+        </div>
+    </div>
+    <!--menu-->
+    <!--carousel2-->
+    <!--gallery-->
+    <section-gallery>
+    <div class="gallery-title">
+        <h1> Some photo from <span> our restaurant</span> us </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsum ducimus<br> deleniti minima
+            odit architecto eum iusto amet!</p>
+    </div>
+    <div class="gallery">
+    <div class="img-gallery1"><img src="./public/assets/img/gallery/gallery-1.jpg" alt="" width="350px"><img src="./public/assets/img/gallery/gallery-2.jpg" alt="" width="350px"><img src="./public/assets/img/gallery/gallery-3.jpg" alt="" width="350px"><img src="./public/assets/img/gallery/gallery-4.jpg" alt="" width="350px"></div>
+  
+    <div class="img-gallery2"><img src="./public/assets/img/gallery/gallery-5.jpg" alt="" width="350px"><img src="./public/assets/img/gallery/gallery-6.jpg" alt="" width="350px"><img src="./public/assets/img/gallery/gallery-7.jpg" alt="" width="350px"><img src="./public/assets/img/gallery/gallery-8.jpg" alt="" width="350px"></div>
+</div>
+</section-gallery>
+<!--chefs-->
+<div class="chefs-title">
+    <h1> Our professionel <span> Chefs</span> </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,<br> ipsum ducimus deleniti minima
+        odit architecto eum iusto amet!</p>
+    </div>
+<!--carousel3-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./public/assets/img/testimonials-bg.jpg" class="d-block w-100" alt="...">
+        <div>
+            <img src="./public/assets/img/testimonials/testimonials-1.jpg" alt="">
+            
+        </div>
+
+        </div>
+    </div>
+      <div class="carousel-item">
+        <img src="./public/assets/img/testimonials-bg.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./public/assets/img/testimonials-bg.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+    <!--contact-->
+    <div>
+        <div class="contact-title">
+            <h1> <span>Contact</span> us </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,<br> ipsum ducimus deleniti minima
+                odit architecto eum iusto amet!</p>
+        </div>
+
+    </div>
+    <div class="ratio ratio-16x9 ">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96714.68291250926!2d-74.05953969406828!3d40.75468158321536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20Nowy%20Jork%2C%20Stany%20Zjednoczone!5e0!3m2!1spl!2spl!4v1672242259543!5m2!1spl!2spl"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+   <!--form-->
+            
+    <div class="form">
+        <div class="info">
+            <div>
+                <h4>Location</h4>
+                <p>Lorem ipsum dolor sit <br>amet consectetur.</p>
+            </div>
+            <div>
+                <h4>Open Houers</h4>
+                <p>Lorem ipsum dolor sit <br>amet consectetur.</p>
+            </div>
+            <div>
+                <h4>Email</h4>
+                <p>Lorem ipsum dolor sit <br>amet consectetur.</p>
+            </div>
+            <div>
+                <h4>Call</h4>
+                <p>Lorem ipsum dolor sit <br>amet consectetur.</p>
+            </div>
+        </div>
+        <div class="contact">
+
+            <div class="contact-p">
+                <div class="input-text">
+                    <div><input class="text" type="text" placeholder="Your Name"></div>
+                    <div><input class="text" type="text" placeholder="Enter Your Email"></div>
+                </div>
+
+                <div class="input-subject">
+                    <input class="subject" type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div><textarea class="textarea">message</textarea></div>
+            <button class="button-contact">Send message</button>
+
+        </div>
+        <!--footer-->
+        <footer class="text-center">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <div class="footer-title">
+                    <h1>Delicious</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, suscipit quas odit atque esse
+                        soluta!
+                    </p>
+                </div>
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="icon m-3"><i class="bi bi-facebook text-light"></i></a>
+
+
+                    <!-- Twitter -->
+
+                    <a class="icon m-3"><i class="bi bi-twitter  text-light"></i></a>
+                    <!-- Google -->
+                    <a class="icon m-3"><i class="bi bi-google  text-light"></i></a>
+
+                    <!-- Instagram -->
+
+                    <a class="icon m-3"><i class="bi bi-instagram  text-light"></i></a>
+                    <!-- Linkedin -->
+                    <a class="icon m-3"><i class="bi bi-linkedin  text-light"></i></a>
+
+
+                    <!-- skybe -->
+                    <a class="icon m-3"><i class="bi bi-skype  text-light"></i></a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © Copyright<b>Delecious.</b>All Rights Reserved <br>
+                <a class="text-warning" href="https://mdbootstrap.com/"> Designed by Wiaam :)</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
