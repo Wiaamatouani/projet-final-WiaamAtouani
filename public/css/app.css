@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12000,6 +12001,10 @@ nav h1, nav .h1 {
   justify-content: center;
   flex-direction: column;
   padding: 50px;
+<<<<<<< HEAD
+=======
+  margin-top: 15px;
+>>>>>>> nav
 }
 .contact-title h1, .contact-title .h1 {
   font-family: "Satisfy", cursive;
@@ -12011,7 +12016,11 @@ nav h1, nav .h1 {
 
 .ratio {
   width: 100vw;
+<<<<<<< HEAD
   height: 50vh;
+=======
+  height: 40vh;
+>>>>>>> nav
 }
 
 .info {
@@ -12028,12 +12037,20 @@ nav h1, nav .h1 {
   align-items: center;
   justify-content: space-around;
   gap: 2vw;
+<<<<<<< HEAD
   padding: 10px;
   flex-direction: column;
   border: none;
   padding: 4vh;
   margin-left: 7vw;
   margin-right: 7vw;
+=======
+  padding: 40vh;
+  flex-direction: column;
+  border: none;
+  padding: 4vh;
+  margin-top: 5vh;
+>>>>>>> nav
   margin-bottom: 5vh;
   box-shadow: 0px 0px 24px 0px grey;
 }
@@ -12095,13 +12112,17 @@ nav h1, nav .h1 {
 .gallery {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: center;
   gap: 1vh;
+=======
+>>>>>>> nav
   flex-direction: column;
 }
 .gallery .img-gallery1 {
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   height: 205px;
   gap: 4px;
 }
@@ -12113,6 +12134,15 @@ nav h1, nav .h1 {
 }
 .gallery .img-gallery2:hover {
   scale: 1.2;
+=======
+  gap: 3px;
+}
+.gallery .img-gallery1 .img {
+  padding: 3px;
+}
+.gallery .img-gallery1 .img:hover {
+  scale: 1.1;
+>>>>>>> nav
 }
 
 .chefs-title {
@@ -12132,5 +12162,185 @@ nav h1, nav .h1 {
 .chefs-title h1 p, .chefs-title .h1 p {
   font-family: "Poppins", sans-serif;
 }
+<<<<<<< HEAD
+=======
+
+.second-carousel {
+  background-image: url(../image/events-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+}
+.second-carousel h1, .second-carousel .h1 {
+  font-family: "Satisfy", cursive;
+}
+.second-carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.4;
+}
+
+.font-weight {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.icon .p {
+  font-weight: 300;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: bolder;
+  border-bottom: 3px solid #ffc400;
+  width: 3vw;
+}
+
+.up-img div,
+.down-img div {
+  overflow: hidden;
+}
+.up-img img,
+.down-img img {
+  transition: all 0.3s ease;
+}
+.up-img img:hover,
+.down-img img:hover {
+  transform: scale(1.1);
+}
+
+.textCenter {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.Book-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.Book-title h1, .Book-title .h1 {
+  font-family: "Satisfy", cursive;
+  color: #5f5950;
+}
+.Book-title span {
+  color: #ffb03b;
+}
+
+.contact-ev {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2vw;
+  padding: 10px;
+  flex-direction: column;
+  border: none;
+  padding: 4vh;
+  margin-top: 2vh;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-bottom: 5vh;
+  box-shadow: 0px 0px 24px 0px grey;
+}
+.contact-ev .contact-et {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.contact-ev .contact-et .input-texts {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.contact-ev .contact-et .input-texts .text {
+  width: 410px;
+  height: 44px;
+}
+.contact-ev .textarea {
+  width: 85vw;
+  height: 127px;
+}
+
+.carousel-slide {
+  height: 700px;
+  padding-top: 7vh;
+}
+
+.nav-link {
+  color: black;
+  background-color: white;
+}
+.nav-link:hover {
+  color: orange;
+}
+
+.tab-content {
+  gap: 2px;
+}
+
+.tab-content {
+  padding: 30px;
+  padding-left: 10vw;
+  border: none;
+}
+.tab-content .tab-pane {
+  gap: 1vh;
+}
+
+.speciels-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 10px;
+}
+.speciels-menu h1, .speciels-menu .h1 {
+  font-family: "Satisfy", cursive;
+  color: #5f5950;
+}
+.speciels-menu h1 span, .speciels-menu .h1 span {
+  color: #ffb03b;
+}
+.speciels-menu h1 p, .speciels-menu .h1 p {
+  font-family: "Poppins", sans-serif;
+}
+
+.Menu-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px;
+}
+.Menu-title h1, .Menu-title .h1 {
+  font-family: "Satisfy", cursive;
+  color: #5f5950;
+}
+.Menu-title span {
+  color: #ffb03b;
+}
+
+.row .col-lg-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: red;
+}
+.row a {
+  text-decoration: none;
+  color: #ffb03b;
+}
+>>>>>>> nav
 
 /*# sourceMappingURL=app.css.map */
